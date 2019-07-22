@@ -10,7 +10,7 @@ $letter-mid: color-perc($letter-dark, $letter-light, 75);
 .toko footer .frame {
   background: linear-gradient(top, $letter-darkest 0%, $letter-light 10%, $letter-light 100%);
   color: $letter-darkest;
-  border-top: 1px solid $letter-light;
+  border-top: 2px solid $letter-light;
 }
 
 .letter-toko {

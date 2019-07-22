@@ -4,56 +4,65 @@
       <section class="hero hero-mono">
         <div class="container hero-text">
           <div class="letter letter-mono">
-            <div class="letter-m-top">
-              <div class="letter-m-top-mid">
-                <div class="letter-m-top-in"></div>
-              </div>
+            <div class="letter-layer-m letter-layer-first">
+              <div class="letter-stem-left"></div>
+              <div class="letter-top"></div>
+              <div class="letter-middle"></div>
+              <div class="letter-stem-right"></div>
             </div>
-            <div class="letter-m-stem">
-              <div class="letter-m-stem-mid">
-                <div class="letter-m-stem-in"></div>
-              </div>
+            <div class="letter-layer-m letter-layer-second">
+              <div class="letter-stem-left"></div>
+              <div class="letter-top"></div>
+              <div class="letter-middle"></div>
+              <div class="letter-stem-right"></div>
             </div>
-            <div class="letter-m-steml">
-              <div class="letter-m-steml-mid">
-                <div class="letter-m-steml-in"></div>
-              </div>
-            </div>
-            <div class="letter-m-stemr">
-              <div class="letter-m-stemr-mid">
-                <div class="letter-m-stemr-in"></div>
-              </div>
+            <div class="letter-layer-m letter-layer-third">
+              <div class="letter-stem-left"></div>
+              <div class="letter-top"></div>
+              <div class="letter-middle"></div>
+              <div class="letter-stem-right"></div>
             </div>
           </div>
+
           <div class="letter letter-mono">
-            <div class="letter-o">
-              <div class="letter-o-mid">
-                <div class="letter-o-in"></div>
-              </div>
+            <div class="letter-layer-o letter-layer-first">
+              <div class="letter-stem"></div>
+            </div>
+            <div class="letter-layer-o letter-layer-second">
+              <div class="letter-stem"></div>
+            </div>
+            <div class="letter-layer-o letter-layer-third">
+              <div class="letter-stem"></div>
             </div>
           </div>
+
           <div class="letter letter-mono">
-            <div class="letter-n-cross">
-              <div class="letter-n-cross-mid">
-                <div class="letter-n-cross-in"></div>
-              </div>
+            <div class="letter-layer-m letter-layer-first">
+              <div class="letter-stem-left"></div>
+              <div class="letter-top"></div>
+              <div class="letter-stem-right"></div>
             </div>
-            <div class="letter-n-steml">
-              <div class="letter-n-steml-mid">
-                <div class="letter-n-steml-in"></div>
-              </div>
+            <div class="letter-layer-m letter-layer-second">
+              <div class="letter-stem-left"></div>
+              <div class="letter-top"></div>
+              <div class="letter-stem-right"></div>
             </div>
-            <div class="letter-n-stemr">
-              <div class="letter-n-stemr-mid">
-                <div class="letter-n-stemr-in"></div>
-              </div>
+            <div class="letter-layer-m letter-layer-third">
+              <div class="letter-stem-left"></div>
+              <div class="letter-top"></div>
+              <div class="letter-stem-right"></div>
             </div>
           </div>
+
           <div class="letter letter-mono">
-            <div class="letter-o">
-              <div class="letter-o-mid">
-                <div class="letter-o-in"></div>
-              </div>
+            <div class="letter-layer-o letter-layer-first">
+              <div class="letter-stem"></div>
+            </div>
+            <div class="letter-layer-o letter-layer-second">
+              <div class="letter-stem"></div>
+            </div>
+            <div class="letter-layer-o letter-layer-third">
+              <div class="letter-stem"></div>
             </div>
           </div>
         </div>

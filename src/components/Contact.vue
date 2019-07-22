@@ -74,7 +74,6 @@
               <div class="letter-stem"></div>
             </div>
           </div>
-
         </div>
       </section>
       <section>

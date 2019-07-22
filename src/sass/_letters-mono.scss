@@ -10,7 +10,7 @@ $letter-light: #efb43e;
 .mono footer .frame {
   background: linear-gradient(top, $letter-darkest 0%, $letter-light 10%, $letter-light 100%);
   color: $letter-darkest;
-  border-top: 1px solid $letter-light;
+  border-top: 2px solid $letter-light;
 }
 
 .letter-mono {
@@ -25,325 +25,367 @@ $letter-light: #efb43e;
 
   .letter {
 
-    // $letter-dark: #F0563D;
-    // $letter-mid: #ef8b3e;
-    // $letter-light: #efb43e;
+    &-layer {
 
-    &-m {
-      &-top {
-        background-color: $letter-dark;
-        height: 42% !important;
-        width: 100%;
-        padding: 8%;
-
-        &-mid {
-          background-color: $letter-mid;
-          height: 100% !important;
-          width: 100%;
-          padding: 10%;
+      // M
+      &-first.letter-layer-m {
+        > div {
+          width: 40%;
+          background-color: $letter-dark;
+          height: 40%;
+          position: absolute;
         }
 
-        &-in {
-          background-color: $letter-light;
+        div.letter-middle {
+          margin-left: -21%;
+          width: 40%;
           height: 100%;
-          width: 100%;
-        }
-      }
-
-      &-stem {
-        background-color: $letter-dark;
-        width: 42% !important;
-        top: 42% !important;
-        left: 29%;
-        height: 58% !important;
-        padding: 8%;
-        position: absolute;
-
-        &-mid {
-          background-color: $letter-mid;
-          height: 100% !important;
-          width: 60%;
-          padding: 20%;
-          top: -15%;
-          position: absolute;
+          left: 50%;
         }
 
-        &-in {
-          position: absolute;
-          background-color: $letter-light;
-          top: -25%;
-          height: 110%;
-          width: 35%;
-        }
-      }
-
-      &-steml, &-stemr {
-        background-color: $letter-dark;
-        width: 36% !important;
-        top: 42% !important;
-        height: 58% !important;
-        position: absolute;
-
-        &-mid {
-          background-color: $letter-mid;
-          height: 100% !important;
-          width: 60%;
-          padding: 20%;
-          top: -15%;
-          position: absolute;
-        }
-
-        &-in {
-          position: absolute;
-          background-color: $letter-light;
-          top: -29%;
-          height: 114%;
-          width: 35%;
-        }
-      }
-
-      &-steml {
-        left: 0;
-        padding: 8%;
-      }
-
-      &-stemr {
-        right: -1px;
-        padding: 6%;
-      }
-    }
-
-    &-o {
-      background-color: $letter-dark;
-      border-radius: 50%;
-      height: 100%;
-      width: 100%;
-      padding: 8%;
-
-      &-mid {
-        background-color: $letter-mid;
-        border-radius: 50%;
-        height: 100%;
-        width: 100%;
-        padding: 10%;
-      }
-
-      &-in {
-        background-color: $letter-light;
-        border-radius: 50%;
-        height: 100%;
-        width: 100%;
-      }
-
-    }
-
-    &-k {
-      &-topr {
-        background-color: $letter-dark;
-        width: 42% !important;
-        top: 0% !important;
-        right: 0%;
-        height: 42% !important;
-        padding: 8%;
-        position: absolute;
-
-        &-mid {
-          background-color: $letter-mid;
-          height: 100% !important;
-          width: 100%;
-          padding: 30%;
-        }
-
-        &-in {
-          background-color: $letter-light;
+        div.letter-stem-left {
           height: 100%;
-          width: 100%;
-        }
-      }
-
-      &-botr {
-        background-color: $letter-dark;
-        width: 42% !important;
-        bottom: 0% !important;
-        right: 0%;
-        height: 42% !important;
-        padding: 8%;
-        position: absolute;
-
-        &-mid {
-          background-color: $letter-mid;
-          height: 100% !important;
-          width: 100%;
-          padding: 30%;
         }
 
-        &-in {
-          background-color: $letter-light;
+        div.letter-stem-right {
           height: 100%;
+        }
+
+        div.letter-top {
+          height: 40%;
           width: 100%;
         }
       }
 
-      &-stem {
-        background-color: $letter-dark;
-        width: 42% !important;
-        top: 0% !important;
-        left: 0%;
-        height: 100% !important;
-        padding: 8%;
-        position: absolute;
+      &-second.letter-layer-m {
 
-        &-mid {
+        > div {
           background-color: $letter-mid;
-          height: 100% !important;
-          width: 100%;
-          padding: 30%;
-        }
-
-        &-in {
-          background-color: $letter-light;
-          height: 100%;
-          width: 100%;
-        }
-      }
-
-      &-stemtop {
-        background-color: $letter-dark;
-        width: 23% !important;
-        top: 0% !important;
-        right: 17.5%;
-        height: 59% !important;
-        padding: 11.6% 0;
-        position: absolute;
-        transform: rotate(135deg);
-
-        &-mid {
-          background-color: $letter-mid;
-          height: 62% !important;
-          width: 144%;
-          padding: 45%;
-          left: 0;
+          width: 24%;
+          height: 24%;
           position: absolute;
         }
 
-        &-in {
-          left: -1%;
-          position: absolute;
-          background-color: $letter-light;
-          height: 41%;
-          width: 102%;
+        div.letter-top {
+          top: 8%;
+          width: 84%;
+          left: 8%;
+        }
+
+        div.letter-stem-left {
+          height: 84%;
+          left: 8%;
+          top: 8%;
+        }
+
+        div.letter-stem-right {
+          height: 84%;
+          right: 8%;
+          top: 8%;
+        }
+
+        div.letter-middle {
+          margin-left: -12%;
+          width: 24%;
+          height: 84%;
+          left: 50%;
+          top: 8%;
         }
       }
 
-      &-stembot {
-        background-color: $letter-dark;
-        width: 23% !important;
-        bottom: 0% !important;
-        right: 17.5%;
-        height: 59% !important;
-        padding: 11.6% 0;
-        position: absolute;
-        transform: rotate(45deg);
+      &-third.letter-layer-m {
+        > div {
+          background-color: $letter-light;
+          width: 8%;
+          height: 8%;
+          position: absolute;
+        }
 
-        &-mid {
+        div.letter-top {
+          left: 16%;
+          width: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-left {
+          left: 16%;
+          height: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-right {
+          right: 16%;
+          height: 68%;
+          top: 16%;
+        }
+
+        div.letter-middle {
+          margin-left: -4%;
+          width: 8%;
+          height: 68%;
+          left: 50%;
+          top: 16%;
+        }
+      }
+
+      // A
+      &-first.letter-layer-a {
+        > div {
+          width: 40%;
+          background-color: $letter-dark;
+          height: 40%;
+          position: absolute;
+        }
+
+        div.letter-stem-center {
+          margin-top: -21%;
+          width: 100%;
+        }
+
+        div.letter-stem-top {
+          width: 100%;
+        }
+
+        div.letter-stem-left {
+          height: 100%;
+        }
+
+        div.letter-stem-right {
+          height: 100%;
+        }
+      }
+
+      &-second.letter-layer-a {
+
+        > div {
           background-color: $letter-mid;
-          height: 62% !important;
-          width: 144%;
-          padding: 45%;
+          width: 24%;
+          height: 24%;
+          position: absolute;
+        }
+
+        div.letter-stem-center {
+          margin-top: -13%;
+          width: 84%;
+          left: 8%;
+        }
+
+        div.letter-stem-top {
+          width: 84%;
+          left: 8%;
+          top: 8%;
+        }
+
+        div.letter-stem-left {
+          height: 84%;
+          left: 8%;
+          top: 8%;
+        }
+
+        div.letter-stem-right {
+          height: 84%;
+          right: 8%;
+          top: 8%;
+        }
+      }
+
+      &-third.letter-layer-a {
+        > div {
+          background-color: $letter-light;
+          width: 8%;
+          height: 8%;
+          position: absolute;
+        }
+
+        div.letter-stem-center {
+          margin-top: -4%;
+          left: 16%;
+          width: 68%;
+        }
+
+        div.letter-stem-top {
+          left: 16%;
+          width: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-left {
+          left: 16%;
+          height: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-right {
+          right: 16%;
+          height: 68%;
+          top: 16%;
+        }
+      }
+
+      // L
+      &-first.letter-layer-l {
+        > div {
+          width: 40%;
+          background-color: $letter-dark;
+          height: 40%;
+          position: absolute;
+        }
+
+        div.letter-stem-left {
+          height: 100%;
+        }
+
+        div.letter-stem-botl {
+          bottom: 0;
+          width: 47.3333%;
           right: 0;
+        }
+
+        div.letter-stem-right {
+          height: 100%;
+          left: 52.6666%;
+        }
+
+        div.letter-stem-botr {
+          bottom: 0;
+          width: 47.3333%;
+        }
+      }
+
+      &-second.letter-layer-l {
+
+        > div {
+          background-color: $letter-mid;
+          width: 24%;
+          height: 24%;
           position: absolute;
         }
 
-        &-in {
-          right: -1%;
-          position: absolute;
-          background-color: $letter-light;
-          height: 41%;
-          width: 102%;
+        div.letter-stem-left {
+          height: 84%;
+          left: 8%;
+          top: 8%;
         }
+
+        div.letter-stem-botl {
+          height: 24%;
+          width: 31%;
+          left: 8%;
+          bottom: 8%;
+        }
+
+        div.letter-stem-right {
+          height: 84%;
+          left: 60.6666%;
+          top: 8%;
+          width: 24%;
+        }
+
+        div.letter-stem-botr {
+          height: 24%;
+          right: 8%;
+          bottom: 8%;
+        }
+      }
+
+      &-third.letter-layer-l {
+        > div {
+          background-color: $letter-light;
+          width: 8%;
+          height: 8%;
+          position: absolute;
+        }
+
+        div.letter-stem-left {
+          left: 16%;
+          height: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-botl {
+          left: 16%;
+          height: 8%;
+          width: 15%;
+          bottom: 16%;
+        }
+
+        div.letter-stem-right {
+          left: 68.6666%;
+          height: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-botr {
+          right: 15%;
+          height: 8%;
+          width: 15%;
+          bottom: 16%;
+        }
+      }
+
+      // O
+      &-first.letter-layer-o {
+        > div {
+          width: 40%;
+          background-color: $letter-dark;
+          height: 40%;
+          position: absolute;
+        }
+
+        div.letter-stem {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      &-second.letter-layer-o {
+
+        > div {
+          background-color: $letter-mid;
+          width: 24%;
+          height: 24%;
+          position: absolute;
+        }
+
+        div.letter-stem {
+          height: 84%;
+          width: 84%;
+          border-radius: 100%;
+          left: 8%;
+          top: 8%;
+        }
+      }
+
+      &-third.letter-layer-o {
+        > div {
+          background-color: $letter-light;
+          width: 8%;
+          height: 8%;
+          position: absolute;
+        }
+
+        div.letter-stem {
+          left: 16%;
+          height: 68%;
+          width: 68%;
+          border-radius: 100%;
+          top: 16%;
+        }
+      }
+    }
+
+    &-stem {
+
+      &-left {
+      }
+
+      &-right {
+        right: 0;
       }
 
       &-center {
-        background-color: $letter-dark;
-        width: 16% !important;
-        top: 17% !important;
-        left: 34%;
-        height: 67% !important;
-        position: absolute;
-
-        &-mid {
-          position: absolute;
-          top: 10%;
-          background-color: $letter-mid;
-          height: 79% !important;
-          width: 100%;
-        }
-
-        &-in {
-          background-color: $letter-light;
-          height: 39%;
-          width: 216%;
-          top: 30%;
-          left: -48%;
-          position: absolute;
-        }
-      }
-    }
-
-    &-n {
-      &-cross {
-        background-color: $letter-dark;
-        height: 42% !important;
-        width: 100%;
-        padding: 8%;
-
-        &-mid {
-          background-color: $letter-mid;
-          height: 100% !important;
-          width: 100%;
-          padding: 10%;
-        }
-
-        &-in {
-          background-color: $letter-light;
-          height: 100%;
-          width: 100%;
-        }
-      }
-
-      &-steml, &-stemr {
-        background-color: $letter-dark;
-        width: 40% !important;
-        top: 42% !important;
-        height: 58% !important;
-        position: absolute;
-
-        &-mid {
-          background-color: $letter-mid;
-          height: 100% !important;
-          width: 60%;
-          padding: 20%;
-          top: -15%;
-          position: absolute;
-        }
-
-        &-in {
-          position: absolute;
-          background-color: $letter-light;
-          top: -29%;
-          height: 114%;
-          width: 35%;
-        }
-      }
-
-      &-steml {
-        left: 0;
-        padding: 8%;
-      }
-
-      &-stemr {
-        right: 0px;
-        padding: 8%;
+        top: 50%;
       }
     }
   }

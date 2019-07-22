@@ -4,63 +4,68 @@
       <section class="hero hero-toko">
         <div class="container hero-text">
           <div class="letter letter-toko">
-            <div class="letter-t-top letter-top">
-              <div class="letter-t-top-mid letter-mid">
-                <div class="letter-t-top-in letter-in"></div>
-              </div>
+            <div class="letter-layer-t letter-layer-first">
+              <div class="letter-top"></div>
+              <div class="letter-stem"></div>
             </div>
-            <div class="letter-t-stem letter-top">
-              <div class="letter-t-stem-mid letter-mid">
-                <div class="letter-t-stem-in letter-in"></div>
-              </div>
+            <div class="letter-layer-t letter-layer-second">
+              <div class="letter-top"></div>
+              <div class="letter-stem"></div>
             </div>
-          </div>
-          <div class="letter letter-toko">
-            <div class="letter-o letter-top">
-              <div class="letter-o-mid letter-mid">
-                <div class="letter-o-in letter-in"></div>
-              </div>
+            <div class="letter-layer-t letter-layer-third">
+              <div class="letter-top"></div>
+              <div class="letter-stem"></div>
             </div>
           </div>
+
           <div class="letter letter-toko">
-            <div class="letter-k">
-              <div class="letter-k-stem letter-top">
-                <div class="letter-k-stem-mid letter-mid">
-                  <div class="letter-k-stem-in letter-in"></div>
-                </div>
-              </div>
-              <div class="letter-k-topr letter-top">
-                <div class="letter-k-topr-mid letter-mid">
-                  <div class="letter-k-topr-in letter-in"></div>
-                </div>
-              </div>
-              <div class="letter-k-botr letter-top">
-                <div class="letter-k-botr-mid letter-mid">
-                  <div class="letter-k-botr-in letter-in"></div>
-                </div>
-              </div>
-              <div class="letter-k-stemtop letter-top">
-                <div class="letter-k-stemtop-mid letter-mid">
-                  <div class="letter-k-stemtop-in letter-in"></div>
-                </div>
-              </div>
-              <div class="letter-k-stembot letter-top">
-                <div class="letter-k-stembot-mid letter-mid">
-                  <div class="letter-k-stembot-in letter-in"></div>
-                </div>
-              </div>
-              <div class="letter-k-center letter-top">
-                <div class="letter-k-center-mid letter-mid">
-                  <div class="letter-k-center-in letter-in"></div>
-                </div>
-              </div>
+            <div class="letter-layer-o letter-layer-first">
+              <div class="letter-stem"></div>
+            </div>
+            <div class="letter-layer-o letter-layer-second">
+              <div class="letter-stem"></div>
+            </div>
+            <div class="letter-layer-o letter-layer-third">
+              <div class="letter-stem"></div>
             </div>
           </div>
+
           <div class="letter letter-toko">
-            <div class="letter-o letter-top">
-              <div class="letter-o-mid letter-mid">
-                <div class="letter-o-in letter-in"></div>
-              </div>
+            <div class="letter-layer-k letter-layer-first">
+              <div class="letter-stem"></div>
+              <div class="letter-center"></div>
+              <div class="letter-cross-top"></div>
+              <div class="letter-cross-bottom"></div>
+              <div class="letter-top"></div>
+              <div class="letter-bottom"></div>
+            </div>
+            <div class="letter-layer-k letter-layer-second">
+              <div class="letter-stem"></div>
+              <div class="letter-center"></div>
+              <div class="letter-cross-top"></div>
+              <div class="letter-cross-bottom"></div>
+              <div class="letter-top"></div>
+              <div class="letter-bottom"></div>
+            </div>
+            <div class="letter-layer-k letter-layer-third">
+              <div class="letter-stem"></div>
+              <div class="letter-center"></div>
+              <div class="letter-cross-top"></div>
+              <div class="letter-cross-bottom"></div>
+              <div class="letter-top"></div>
+              <div class="letter-bottom"></div>
+            </div>
+          </div>
+
+          <div class="letter letter-toko">
+            <div class="letter-layer-o letter-layer-first">
+              <div class="letter-stem"></div>
+            </div>
+            <div class="letter-layer-o letter-layer-second">
+              <div class="letter-stem"></div>
+            </div>
+            <div class="letter-layer-o letter-layer-third">
+              <div class="letter-stem"></div>
             </div>
           </div>
         </div>
