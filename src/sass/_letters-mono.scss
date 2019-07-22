@@ -1,0 +1,350 @@
+$letter-darkest: #ef3e3e;
+$letter-dark: #F0563D;
+$letter-mid: #ef943e;
+$letter-light: #efb43e;
+
+.hero-mono {
+  background: linear-gradient(135deg, $letter-darkest 0%, $letter-darkest 26%, $letter-light 70%, $letter-mid 100%);
+}
+
+.mono footer .frame {
+  background: linear-gradient(top, $letter-darkest 0%, $letter-light 10%, $letter-light 100%);
+  color: $letter-darkest;
+  border-top: 1px solid $letter-light;
+}
+
+.letter-mono {
+  width: 24%;
+  margin-right: 1.3333%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include ratio(100%);
+
+  .letter {
+
+    // $letter-dark: #F0563D;
+    // $letter-mid: #ef8b3e;
+    // $letter-light: #efb43e;
+
+    &-m {
+      &-top {
+        background-color: $letter-dark;
+        height: 42% !important;
+        width: 100%;
+        padding: 8%;
+
+        &-mid {
+          background-color: $letter-mid;
+          height: 100% !important;
+          width: 100%;
+          padding: 10%;
+        }
+
+        &-in {
+          background-color: $letter-light;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      &-stem {
+        background-color: $letter-dark;
+        width: 42% !important;
+        top: 42% !important;
+        left: 29%;
+        height: 58% !important;
+        padding: 8%;
+        position: absolute;
+
+        &-mid {
+          background-color: $letter-mid;
+          height: 100% !important;
+          width: 60%;
+          padding: 20%;
+          top: -15%;
+          position: absolute;
+        }
+
+        &-in {
+          position: absolute;
+          background-color: $letter-light;
+          top: -25%;
+          height: 110%;
+          width: 35%;
+        }
+      }
+
+      &-steml, &-stemr {
+        background-color: $letter-dark;
+        width: 36% !important;
+        top: 42% !important;
+        height: 58% !important;
+        position: absolute;
+
+        &-mid {
+          background-color: $letter-mid;
+          height: 100% !important;
+          width: 60%;
+          padding: 20%;
+          top: -15%;
+          position: absolute;
+        }
+
+        &-in {
+          position: absolute;
+          background-color: $letter-light;
+          top: -29%;
+          height: 114%;
+          width: 35%;
+        }
+      }
+
+      &-steml {
+        left: 0;
+        padding: 8%;
+      }
+
+      &-stemr {
+        right: -1px;
+        padding: 6%;
+      }
+    }
+
+    &-o {
+      background-color: $letter-dark;
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+      padding: 8%;
+
+      &-mid {
+        background-color: $letter-mid;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+      }
+
+      &-in {
+        background-color: $letter-light;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+      }
+
+    }
+
+    &-k {
+      &-topr {
+        background-color: $letter-dark;
+        width: 42% !important;
+        top: 0% !important;
+        right: 0%;
+        height: 42% !important;
+        padding: 8%;
+        position: absolute;
+
+        &-mid {
+          background-color: $letter-mid;
+          height: 100% !important;
+          width: 100%;
+          padding: 30%;
+        }
+
+        &-in {
+          background-color: $letter-light;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      &-botr {
+        background-color: $letter-dark;
+        width: 42% !important;
+        bottom: 0% !important;
+        right: 0%;
+        height: 42% !important;
+        padding: 8%;
+        position: absolute;
+
+        &-mid {
+          background-color: $letter-mid;
+          height: 100% !important;
+          width: 100%;
+          padding: 30%;
+        }
+
+        &-in {
+          background-color: $letter-light;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      &-stem {
+        background-color: $letter-dark;
+        width: 42% !important;
+        top: 0% !important;
+        left: 0%;
+        height: 100% !important;
+        padding: 8%;
+        position: absolute;
+
+        &-mid {
+          background-color: $letter-mid;
+          height: 100% !important;
+          width: 100%;
+          padding: 30%;
+        }
+
+        &-in {
+          background-color: $letter-light;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      &-stemtop {
+        background-color: $letter-dark;
+        width: 23% !important;
+        top: 0% !important;
+        right: 17.5%;
+        height: 59% !important;
+        padding: 11.6% 0;
+        position: absolute;
+        transform: rotate(135deg);
+
+        &-mid {
+          background-color: $letter-mid;
+          height: 62% !important;
+          width: 144%;
+          padding: 45%;
+          left: 0;
+          position: absolute;
+        }
+
+        &-in {
+          left: -1%;
+          position: absolute;
+          background-color: $letter-light;
+          height: 41%;
+          width: 102%;
+        }
+      }
+
+      &-stembot {
+        background-color: $letter-dark;
+        width: 23% !important;
+        bottom: 0% !important;
+        right: 17.5%;
+        height: 59% !important;
+        padding: 11.6% 0;
+        position: absolute;
+        transform: rotate(45deg);
+
+        &-mid {
+          background-color: $letter-mid;
+          height: 62% !important;
+          width: 144%;
+          padding: 45%;
+          right: 0;
+          position: absolute;
+        }
+
+        &-in {
+          right: -1%;
+          position: absolute;
+          background-color: $letter-light;
+          height: 41%;
+          width: 102%;
+        }
+      }
+
+      &-center {
+        background-color: $letter-dark;
+        width: 16% !important;
+        top: 17% !important;
+        left: 34%;
+        height: 67% !important;
+        position: absolute;
+
+        &-mid {
+          position: absolute;
+          top: 10%;
+          background-color: $letter-mid;
+          height: 79% !important;
+          width: 100%;
+        }
+
+        &-in {
+          background-color: $letter-light;
+          height: 39%;
+          width: 216%;
+          top: 30%;
+          left: -48%;
+          position: absolute;
+        }
+      }
+    }
+
+    &-n {
+      &-cross {
+        background-color: $letter-dark;
+        height: 42% !important;
+        width: 100%;
+        padding: 8%;
+
+        &-mid {
+          background-color: $letter-mid;
+          height: 100% !important;
+          width: 100%;
+          padding: 10%;
+        }
+
+        &-in {
+          background-color: $letter-light;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      &-steml, &-stemr {
+        background-color: $letter-dark;
+        width: 40% !important;
+        top: 42% !important;
+        height: 58% !important;
+        position: absolute;
+
+        &-mid {
+          background-color: $letter-mid;
+          height: 100% !important;
+          width: 60%;
+          padding: 20%;
+          top: -15%;
+          position: absolute;
+        }
+
+        &-in {
+          position: absolute;
+          background-color: $letter-light;
+          top: -29%;
+          height: 114%;
+          width: 35%;
+        }
+      }
+
+      &-steml {
+        left: 0;
+        padding: 8%;
+      }
+
+      &-stemr {
+        right: 0px;
+        padding: 8%;
+      }
+    }
+  }
+}

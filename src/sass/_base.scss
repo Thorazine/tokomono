@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px 0 0 0;
+}
+
+
+
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $color;
+}
+
+.page {
+    top: 60px;
+    position: absolute !important;
+    width: 100%;
+    min-height: calc(100vh + 100px);
+}
+
+.frame {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: #{$width}px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+
+    > h1 {
+        margin-top: 45px;
+    }
+}

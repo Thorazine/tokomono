@@ -1,0 +1,43 @@
+.gate {
+
+  &-door {
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    background-color: #FFF;
+    border: 3px outset #FFF;
+    z-index: 20;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  &-left {
+    animation-name: slideleft;
+    left: 0%;
+  }
+
+  &-right {
+    animation-name: slideright;
+    right: 0%;
+  }
+}
+
+@keyframes slideleft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -50%;
+  }
+}
+
+@keyframes slideright {
+  from {
+    right: 0;
+  }
+  to {
+    right: -50%;
+  }
+}

@@ -1,0 +1,17 @@
+.letter {
+  width: 24%;
+  margin-right: 1.3333%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include ratio(100%);
+
+  $letter-dark: #04878B;
+  $letter-mid: #079391;
+  $letter-light: #13B9AB;
+
+  @import 'letters-hallo';
+
+}

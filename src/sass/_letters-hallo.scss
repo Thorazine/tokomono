@@ -1,0 +1,370 @@
+$letter-darkest: #6A1B9A;
+$letter-dark: #7B1FA2;
+// $letter-mid: #079391;
+$letter-light: #BA68C8;
+$letter-mid: color-perc($letter-dark, $letter-light, 50);
+
+.hero-contact {
+  background: linear-gradient(135deg, $letter-darkest 0%, $letter-darkest 26%, $letter-light 70%, $letter-mid 100%);
+}
+
+.contact footer .frame {
+  background: linear-gradient(top, $letter-darkest 0%, $letter-light 10%, $letter-light 100%);
+  color: $letter-darkest;
+  border-top: 1px solid $letter-light;
+}
+
+.letter-hallo {
+  width: 24%;
+  margin-right: 1.3333%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include ratio(100%);
+
+  .letter {
+
+    &-layer {
+
+      // H
+      &-first.letter-layer-h {
+        > div {
+          width: 40%;
+          background-color: $letter-dark;
+          height: 40%;
+          position: absolute;
+        }
+
+        div.letter-stem-center {
+          margin-top: -21%;
+          width: 100%;
+        }
+
+        div.letter-stem-left {
+          height: 100%;
+        }
+
+        div.letter-stem-right {
+          height: 100%;
+        }
+      }
+
+      &-second.letter-layer-h {
+
+        > div {
+          background-color: $letter-mid;
+          width: 24%;
+          height: 24%;
+          position: absolute;
+        }
+
+        div.letter-stem-center {
+          margin-top: -13%;
+          width: 84%;
+          left: 8%;
+        }
+
+        div.letter-stem-left {
+          height: 84%;
+          left: 8%;
+          top: 8%;
+        }
+
+        div.letter-stem-right {
+          height: 84%;
+          right: 8%;
+          top: 8%;
+        }
+      }
+
+      &-third.letter-layer-h {
+        > div {
+          background-color: $letter-light;
+          width: 8%;
+          height: 8%;
+          position: absolute;
+        }
+
+        div.letter-stem-center {
+          margin-top: -4%;
+          left: 16%;
+          width: 68%;
+        }
+
+        div.letter-stem-left {
+          left: 16%;
+          height: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-right {
+          right: 16%;
+          height: 68%;
+          top: 16%;
+        }
+      }
+
+      // A
+      &-first.letter-layer-a {
+        > div {
+          width: 40%;
+          background-color: $letter-dark;
+          height: 40%;
+          position: absolute;
+        }
+
+        div.letter-stem-center {
+          margin-top: -21%;
+          width: 100%;
+        }
+
+        div.letter-stem-top {
+          width: 100%;
+        }
+
+        div.letter-stem-left {
+          height: 100%;
+        }
+
+        div.letter-stem-right {
+          height: 100%;
+        }
+      }
+
+      &-second.letter-layer-a {
+
+        > div {
+          background-color: $letter-mid;
+          width: 24%;
+          height: 24%;
+          position: absolute;
+        }
+
+        div.letter-stem-center {
+          margin-top: -13%;
+          width: 84%;
+          left: 8%;
+        }
+
+        div.letter-stem-top {
+          width: 84%;
+          left: 8%;
+          top: 8%;
+        }
+
+        div.letter-stem-left {
+          height: 84%;
+          left: 8%;
+          top: 8%;
+        }
+
+        div.letter-stem-right {
+          height: 84%;
+          right: 8%;
+          top: 8%;
+        }
+      }
+
+      &-third.letter-layer-a {
+        > div {
+          background-color: $letter-light;
+          width: 8%;
+          height: 8%;
+          position: absolute;
+        }
+
+        div.letter-stem-center {
+          margin-top: -4%;
+          left: 16%;
+          width: 68%;
+        }
+
+        div.letter-stem-top {
+          left: 16%;
+          width: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-left {
+          left: 16%;
+          height: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-right {
+          right: 16%;
+          height: 68%;
+          top: 16%;
+        }
+      }
+
+      // L
+      &-first.letter-layer-l {
+        > div {
+          width: 40%;
+          background-color: $letter-dark;
+          height: 40%;
+          position: absolute;
+        }
+
+        div.letter-stem-left {
+          height: 100%;
+        }
+
+        div.letter-stem-botl {
+          bottom: 0;
+          width: 47.3333%;
+          right: 0;
+        }
+
+        div.letter-stem-right {
+          height: 100%;
+          left: 52.6666%;
+        }
+
+        div.letter-stem-botr {
+          bottom: 0;
+          width: 47.3333%;
+        }
+      }
+
+      &-second.letter-layer-l {
+
+        > div {
+          background-color: $letter-mid;
+          width: 24%;
+          height: 24%;
+          position: absolute;
+        }
+
+        div.letter-stem-left {
+          height: 84%;
+          left: 8%;
+          top: 8%;
+        }
+
+        div.letter-stem-botl {
+          height: 24%;
+          width: 31%;
+          left: 8%;
+          bottom: 8%;
+        }
+
+        div.letter-stem-right {
+          height: 84%;
+          left: 60.6666%;
+          top: 8%;
+          width: 24%;
+        }
+
+        div.letter-stem-botr {
+          height: 24%;
+          right: 8%;
+          bottom: 8%;
+        }
+      }
+
+      &-third.letter-layer-l {
+        > div {
+          background-color: $letter-light;
+          width: 8%;
+          height: 8%;
+          position: absolute;
+        }
+
+        div.letter-stem-left {
+          left: 16%;
+          height: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-botl {
+          left: 16%;
+          height: 8%;
+          width: 15%;
+          bottom: 16%;
+        }
+
+        div.letter-stem-right {
+          left: 68.6666%;
+          height: 68%;
+          top: 16%;
+        }
+
+        div.letter-stem-botr {
+          right: 15%;
+          height: 8%;
+          width: 15%;
+          bottom: 16%;
+        }
+      }
+
+      // O
+      &-first.letter-layer-o {
+        > div {
+          width: 40%;
+          background-color: $letter-dark;
+          height: 40%;
+          position: absolute;
+        }
+
+        div.letter-stem {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      &-second.letter-layer-o {
+
+        > div {
+          background-color: $letter-mid;
+          width: 24%;
+          height: 24%;
+          position: absolute;
+        }
+
+        div.letter-stem {
+          height: 84%;
+          width: 84%;
+          border-radius: 100%;
+          left: 8%;
+          top: 8%;
+        }
+      }
+
+      &-third.letter-layer-o {
+        > div {
+          background-color: $letter-light;
+          width: 8%;
+          height: 8%;
+          position: absolute;
+        }
+
+        div.letter-stem {
+          left: 16%;
+          height: 68%;
+          width: 68%;
+          border-radius: 100%;
+          top: 16%;
+        }
+      }
+    }
+
+    &-stem {
+
+      &-left {
+      }
+
+      &-right {
+        right: 0;
+      }
+
+      &-center {
+        top: 50%;
+      }
+    }
+  }
+}

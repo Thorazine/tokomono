@@ -1,0 +1,49 @@
+//
+//
+//
+@function color-diff($a, $b) {
+  $sat: saturation($a) - saturation($b);
+  $lig:  lightness($a) -  lightness($b);
+  $fn-sat: if($sat > 0, 'desaturate', 'saturate');
+  $fn-lig: if($lig > 0, 'darken', 'lighten');
+
+  @return (
+    adjust-hue: -(hue($a) - hue($b)),
+    #{$fn-sat}: abs($sat),
+    #{$fn-lig}: abs($lig)
+  );
+}
+
+@function apply-diff($color, $diff) {
+  // e.g. `call(adjust-hue, #BADA55, 42)`
+  @each $key, $value in $diff {
+    $color: call($key, $color, $value);
+  }
+  @return $color;
+}
+
+@function color-perc($a, $b, $perc) {
+  // reverse percentage
+  $perc: 100 - $perc;
+  $sat: saturation($a) - saturation($b);
+  $sat: ($sat / 100) * $perc;
+  $lig:  lightness($a) -  lightness($b);
+  $lig: ($lig / 100) * $perc;
+  $fn-sat: if($sat > 0, 'desaturate', 'saturate');
+  $fn-lig: if($lig > 0, 'darken', 'lighten');
+
+  // $color: call(#{$fn-sat}, $a, abs($sat));
+  $color: call(#{$fn-lig}, $a, abs($lig));
+  // $color: call(adjust-hue, $a, -(hue($a) - hue($b)) );
+
+  // $diff: (
+  //   adjust-hue: -(hue($a) - hue($b)),
+  //   #{$fn-sat}: abs($sat),
+  //   #{$fn-lig}: abs($lig)
+  // );
+
+  // @each $key, $value in $diff {
+  //   $color: call($key, $color, $value);
+  // }
+  @return $color;
+}
