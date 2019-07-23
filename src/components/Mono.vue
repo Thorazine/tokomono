@@ -71,7 +71,7 @@
         <div class="container">
           <h1 class="charm">Mono</h1>
           <p>Mono is het persoonlijke gedeelte, namelijk: Matthijs.</p>
-          <p></p>
+          <p><a href="/static/CV - Matthijs Openneer.docx" download>Download mijn CV</a>.</p>
         </div>
       </section>
     </div>
