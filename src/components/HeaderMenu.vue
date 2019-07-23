@@ -5,7 +5,7 @@
         <img src="../assets/tokomono-logo.png">
         <span>Tokomono</span>
       </router-link>
-      <ul class="menu" :class="{'menu-open': menuOpen}">
+      <ul class="menu" :class="{'menu-open': menuOpen}" v-on:click="toggleOff">
         <li>
           <router-link :to="{ name: 'Toko'}">Toko</router-link>
         </li>
@@ -36,7 +36,9 @@ export default {
   methods: {
     toggle () {
       this.menuOpen = !this.menuOpen
-      console.log(this.menuOpen)
+    },
+    toggleOff () {
+      this.menuOpen = false
     }
   }
 }
