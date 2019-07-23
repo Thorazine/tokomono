@@ -1,2 +1,12 @@
 $width: 1024;
 $color: #2c3e50;
+
+$breakpoints: (
+    'mobile-portrait':  '(max-width: 479px)',
+    'mobile-tablet':    '(max-width: 580px)',
+    'tablet-portrait':  '(max-width: 767px)',
+    'tablet':           '(max-width: 1023px)',
+    'desktop':          '(max-width: 1280px)',
+    'desktop-plus':     '(max-width: 1600px)',
+    'desktop-max':      '(min-width: 1601px)',
+);

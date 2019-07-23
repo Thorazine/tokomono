@@ -1,13 +1,6 @@
 <template>
   <div id="app">
-    <section class="gate">
-        <div class="gate-door gate-left">
-
-        </div>
-        <div class="gate-door gate-right">
-
-        </div>
-    </section>
+    <gate></gate>
     <header-menu/>
     <transition name="fade">
       <router-view/>
@@ -17,11 +10,13 @@
 
 <script>
 import HeaderMenu from '@/components/HeaderMenu'
+import Gate from '@/components/Gate'
 
 export default {
   name: 'App',
   components: {
-    'header-menu': HeaderMenu
+    'header-menu': HeaderMenu,
+    'gate': Gate
   }
 }
 </script>

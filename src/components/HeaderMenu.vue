@@ -5,7 +5,7 @@
         <img src="../assets/tokomono-logo.png">
         <span>Tokomono</span>
       </router-link>
-      <ul>
+      <ul class="menu" :class="{'menu-open': menuOpen}">
         <li>
           <router-link :to="{ name: 'Toko'}">Toko</router-link>
         </li>
@@ -16,74 +16,28 @@
           <router-link :to="{ name: 'Contact'}">Contact</router-link>
         </li>
       </ul>
+      <div id="menu-button" v-on:click="toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'Menu'
+  name: 'Menu',
+  data: function () {
+    return {
+      menuOpen: false
+    }
+  },
+  methods: {
+    toggle () {
+      this.menuOpen = !this.menuOpen
+      console.log(this.menuOpen)
+    }
+  }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-  @import '../sass/app.scss';
-
-  a.brand {
-    display: block;
-    height: 100%;
-    width: 200px;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    img {
-      height: 50px;
-      margin-top: 5px;
-      float: left;
-    }
-
-    span {
-      display: block;
-      line-height: 60px;
-      margin-left: 60px;
-      font-size: 40px;
-      font-family: Quicksand;
-    }
-  }
-
-  ul {
-    display: flex;
-    margin: 14px 0;
-    padding: 0;
-    position: absolute;
-    right: 15px;
-    top: 0;
-  }
-
-  li {
-    list-style: none;
-    padding: 0;
-    border-right: 1px solid $color;
-    padding: 5px 10px;
-    transition: all 1s;
-
-    &:last-child {
-      border: none;
-    }
-
-    &:hover a, a.active {
-      border-bottom: 1px solid $color;
-      text-decoration: none;
-    }
-  }
-
-  a {
-    transition: all 1s;
-    text-decoration: none;
-    color: $color;
-    border-bottom: 1px solid transparent;
-  }
-</style>

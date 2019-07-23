@@ -1,0 +1,35 @@
+/**
+ * Breakpoint
+ * @param {string} $name - Name of the breakpoint used in $breakpoints
+ */
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+        @media #{map-get($breakpoints, $name)} {
+            @content;
+        }
+    }
+}
+
+/*
+// Breakpoint sizes as defined in variables
+$breakpoints: (
+    'mobile-portrait':  '(max-width: 479px)',
+    'mobile-tablet':    '(max-width: 580px)',
+    'tablet-portrait':  '(max-width: 767px)',
+    'tablet':           '(max-width: 1023px)',
+    'desktop':          '(max-width: 1280px)',
+    'desktop-plus':     '(max-width: 1600px)',
+    'desktop-max':      '(min-width: 1601px)',
+);
+
+// Workings
+
+div.class {
+    width: 1000px;
+
+    @include breakpoint('mobile-portrait') {
+        // your css. Example:
+        width: 320px;
+    }
+}
+*/
