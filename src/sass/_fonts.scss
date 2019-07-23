@@ -6,6 +6,20 @@ h1 {
     font-size: 80px;
     margin: 0;
 
+    @include breakpoint('mobile-portrait') {
+        font-size: 50px;
+    }
+
+    &.charm {
+        font-family: 'Parisienne';
+        line-height: 100%;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+
     &.charm {
         font-family: 'Parisienne';
         line-height: 100%;

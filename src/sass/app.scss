@@ -6,6 +6,7 @@
 @import 'mixins/breakpoints';
 @import 'functions';
 @import 'fonts';
+@import 'buttons';
 
 // layout
 @import 'base';
@@ -14,5 +15,6 @@
 @import 'theme-green';
 @import 'theme-orange';
 @import 'theme-purple';
+@import 'form';
 @import 'gate';
 @import 'menu';

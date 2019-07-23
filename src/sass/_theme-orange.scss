@@ -8,7 +8,7 @@ $letter-light: #efb43e;
 }
 
 .mono footer .frame {
-  background: linear-gradient(top, $letter-darkest 0%, $letter-light 10%, $letter-light 100%);
+  background: linear-gradient(top, $letter-darkest 0%, $letter-light 30%, $letter-light 100%);
   color: $letter-darkest;
   border-top: 2px solid $letter-light;
 }

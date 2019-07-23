@@ -1,0 +1,14 @@
+.button {
+  -webkit-appearance: none;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 7px 24px;
+  box-shadow: none;
+  border: none;
+  border-radius: 2px;
+
+  &-submit {
+    background-color: #2C3E50;
+    color: #FFF;
+  }
+}

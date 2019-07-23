@@ -77,14 +77,14 @@
           <p></p>
         </div>
       </section>
-      <footer>
-        <div class="frame">
-          <div class="container">
-            <span class="copy">&copy; Tokomono</span>
-          </div>
-        </div>
-      </footer>
     </div>
+    <footer>
+      <div class="frame">
+        <div class="container">
+          <span class="copy">&copy; Tokomono</span>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 

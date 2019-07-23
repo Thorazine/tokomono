@@ -83,23 +83,61 @@
             <a href="mailto:matthijs@tokomono.nl">matthijs@tokomono.nl</a><br>
             <a href="tel:+31642442327">+316 4244 2327</a>
           </p>
-          <p></p>
         </div>
       </section>
-      <footer>
-        <div class="frame">
-          <div class="container">
-            <span class="copy">&copy; Tokomono</span>
+      <section>
+        <div class="container">
+          <div class="form form-padding">
+            <form>
+              <h2 class="charm">Bel mij terug</h2>
+              <label for="name" class="form-group">
+                <input type="text" class="form-control" id="name" v-model="name" placeholder=" " required autocomplete="name">
+                <span class="form-label contact-color">Naam</span>
+                <span class="form-border contact-bg"></span>
+              </label>
+
+              <label for="telephone" class="form-group">
+                <input type="text" class="form-control" id="telephone" v-model="telephone" placeholder=" " required autocomplete="tel">
+                <span class="form-label contact-color">Telefoonnummer</span>
+                <span class="form-border contact-bg"></span>
+              </label>
+
+              <label for="subject" class="form-group">
+                <input type="text" class="form-control" id="subject" v-model="subject" placeholder=" " required>
+                <span class="form-label contact-color">Onderwerp</span>
+                <span class="form-border contact-bg"></span>
+              </label>
+
+              <button type="submit" class="button button-submit button-right">Do it!</button>
+            </form>
+            <aside>
+              Heeft u vragen of opmerkingen, laat het weten. Vul de gewenste gegevens in en u wordt teruggebeld.
+            </aside>
           </div>
         </div>
-      </footer>
+      </section>
     </div>
+    <footer>
+      <div class="frame">
+        <div class="container">
+          <span class="copy">&copy; Tokomono</span>
+        </div>
+      </div>
+    </footer>
   </div>
+
 </template>
 
 <script>
 export default {
   name: 'Contact',
+  data () {
+    return {
+      name: '',
+      email: '',
+      subject: ''
+    }
+  },
   mounted () {
     window.document.title = 'Tokomono - Contact'
   }
@@ -115,6 +153,10 @@ export default {
     &-text {
       display: flex;
       padding: 25px 15px;
+
+      @include breakpoint('mobile-portrait') {
+        padding: 15px 10px;
+      }
     }
   }
 </style>
