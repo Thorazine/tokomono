@@ -73,7 +73,7 @@
       <section>
         <div class="container">
           <h1 class="charm">Toko</h1>
-          <p>Tokomono is opgericht in 2010 en betekend eenmanszaak (toko: bedrijf, mono: één). Over de jaren heb ik veel mooie projecten gemaakt onder deze noemer. Van een touchscreen agenda in VB6, tot een compleet open source CMS package in Laravel blijft Tokomono draaien voor zijn eigen klanten en voor privé projecten.</p>
+          <p>Tokomono is opgericht in 2010 en betekent eenmanszaak (toko: bedrijf, mono: één). Over de jaren heb ik veel mooie projecten gemaakt onder deze noemer. Van een touchscreen agenda in VB6, tot een compleet open source CMS package in Laravel blijft Tokomono draaien voor zijn eigen klanten en voor privé projecten.</p>
           <p></p>
         </div>
       </section>
