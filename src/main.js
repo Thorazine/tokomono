@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
+import {Tabs, Tab} from 'vue-tabs-component'
+
+Vue.component('tabs', Tabs)
+Vue.component('tab', Tab)
 
 Vue.config.productionTip = false
 

@@ -1,6 +1,7 @@
 <template>
   <div class="page toko">
     <div class="frame">
+
       <section class="hero hero-toko">
         <div class="container hero-text">
           <div class="letter letter-toko">
@@ -70,6 +71,7 @@
           </div>
         </div>
       </section>
+
       <section>
         <div class="container">
           <h1 class="charm">Toko</h1>
@@ -77,6 +79,35 @@
           <p></p>
         </div>
       </section>
+
+      <section>
+        <div class="container">
+          <tabs :options="{ useUrlFragment: false }">
+            <tab name="<i class='fas fa-hands-helping'></i>" :id="'samenwerken'">
+              <p>In mijn 20 jaar werkervaring heb ik veel geleerd over samenwerken, waaronder over samenwerken met 'aparte' types. Met een gevarieerd CV als die van mij kom je op plekken waar je werkt met verschillende type mensen.</p>
+              <p>Ik ben er trots op te kunnen zeggen dat ik een lange tijd met zelfs de meest bijzondere types kan samenwerken. Ook als leidingevende kan ik prima uit de voeten. Mijn leidingevende stijl vertaald zich in: Vriendelijk, direct, complimenteus en effectief.</p>
+            </tab>
+            <tab name="<i class='fas fa-chalkboard-teacher'></i>" :id="'leraar'">
+              <p>Het delen van kennis aan leergierigen zie ik als een voorrecht. Naast mijn werk als programmeur vind ik het belangrijk om de nieuwe generatie programmeurs correct te leren programmeren volgens de juiste standaarden. Dit is ooit ontstaan uit mijn irritatie van het kennisniveau van stagaires op mijn werk. De kennis die zij hadden was ondermaats, maar met wat uitleg en begeleiding ging het steeds beter.</p>
+              <p>Ik deel mijn kennis graag, maar hoor ook graag van anderen te melden hebben over hun expertise. Het is dan ook belangrijk om in contact te blijven met mijn team en te bespreken wat zij van een bepaald probleem of oplossing vinden.</p>
+            </tab>
+            <tab name="<i class='fas fa-hat-wizard'></i>" :id="'magie'">
+              <p>Code moet kloppen en elegant zijn. Dat is de reden waarom ik volgens het Clean Code concept werk. Dit zorgt ervoor dat elke functie of class expliciet verantwoordelijk is voor één ding. Dit maakt het ook makkelijker om testen en hergebruiken. Overdragen van code is hierdoor ook makkelijker of zelfs nihil. De code is duidelijk te lezen en overzichtelijk geplaatst in logische folders. Voor mij is de bedoeling van code dat voor de bezoeker en gebruiker alles automagisch gaat.</p>
+              <p>Mijn favoriete framwork om te gebruiken is Laravel. Dit framework barst echt uit elkaar van de programmeer standaarden en forceert programmeurs de juiste richting in. De meest gebruikte standaarden vind je terug in al mijn code. Maar als ik hier perse van af moet wijken is dat ook geen probleem.</p>
+            </tab>
+            <tab name="<i class='fas fa-tachometer-alt'></i>" :id="'snelheid'">
+              <p>Optimalisatie van code is een zeer belangrijke factor. Alleen omdat code werkt op jouw computer, betekend het niet dat het identiek werkt voor 10000 man tegelijk. Ik bouw mijn code altijd zodanig op dat het veel gelijktijdige bezoekers tegelijk aankan met minimale hardware, of zorg ervoor dat dit in de toekomst makkelijk te doen is.</p>
+              <p>Hetzelfde geldt voor upgrades aan een platform. Als programmeurs ergens een bloedhekel aan hebben, dan is het wel onleesbare code van iemand anders. Bij mij is dit vaak geen probleem gezien alles op de plek staat waar je zou verwachten, het werkt zoals je zou verwachten, met de comments op de juiste plekken en geschreven volgens de standaarden. Dit helpt aanzienlijk bij de productie snelheid van een upgrade.</p>
+            </tab>
+            <tab name="<i class='fab fa-apple'></i>" :id="'tech'">
+              <p>Wat je geschreven hebt moet ook online gezet worden. Mijn devops ervaring komt hier goed van pas. Ik ben geen echte nerd wizard op de commandline, maar ik kom een heel eind. Vooral mijn ervaring met het opzetten van automatische deployments bij meerdere hostingpartijen (Amazon, Rackspace, C-panel, Forge, Beanstalk, etc.) kan veel waarde toevoegen in een organisatie.</p>
+              <p>'De juiste tooling' is voor ieder bedrijf anders. Ik heb met vele vormen en programma's gewerkt, waaronder: Jira, Gitlab, Github projectmanagement, fysieke kanban borden, Slack, Teams, Skype en weet ik hoeveel meer. Kortom, de kan is groot dat ik ook uw programma's al ken of dat ik er zonder al te veel moeite snel mee aan de slag kan.</p>
+            </tab>
+        </tabs>
+        </div>
+      </section>
+      <section class="last"></section>
+
     </div>
     <footer>
       <div class="frame">
@@ -89,10 +120,13 @@
 </template>
 
 <script>
-// import Intro from '@/components/Intro'
+// import Tabs from '@/components/Tabs'
 
 export default {
   name: 'Toko',
+  // components: {
+  //   'tabs': Tabs
+  // },
   mounted () {
     window.document.title = 'Tokomono - Toko'
   }
