@@ -79,10 +79,6 @@
       <section>
         <div class="container">
           <h1 class="charm">Contact</h1>
-          <p>
-            <a href="mailto:matthijs@tokomono.nl">matthijs@tokomono.nl</a><br>
-            <a href="tel:+31642442327">+316 4244 2327</a>
-          </p>
         </div>
       </section>
       <section>
